@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&family=Nunito:wght@200;300;400;500;600&display=swap');
+
+:root {
+    --main-color: #be9c79;
+    --black: #333;
+    --white: #fff;
+    --light-color: #666;
+    --border: 2rem soild var(--black);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 1);
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+*::selection {
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+::-webkit-scrollbar {
+    height: .5rem;
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+section {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.heading h2{
+    font-size: 5rem;
+    font-family: 'Merienda one', cursive;
+    letter-spacing: 1px;
+    color: var(--black);
+    height: 2rem;
+    margin-bottom:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading h2 span{
+    color: var(--main-color);
+    margin-left: 15px;
+    font-family: mv boli;
+}
+.heading h2 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background:var(--main-color);
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: var(--main-color);
+    cursor: pointer;
+    color: var(--white);
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+}
+.btn:hover{
+    background-color: var(--black);
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    z-index: 1000;
+}
+
+.header .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 1.5rem 2rem;
+}
+
+.header .flex .logo h2 {
+    font-size: 2rem;
+    font-family: 'Merienda one', cursive;
+    letter-spacing: 1px;
+    color: var(--black);
+}
+
+.header .flex .navbar a {
+    margin: 0 1rem;
+    font-size: 2rem;
+    font-family: "Lora", serif;
+    color: var(--black);
+}
+
+.header .flex .navbar a:hover {
+    text-decoration: underline;
+    color: var(--main-color);
+}
+
+.header .icon i {
+    font-size: 18px;
+    color: var(--black);
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.header .icon i:hover {
+    color: var(--main-color);
+}
+
+.home_gb {
+    background: linear-gradient(90deg, var(--white), transparent 70%), url(images/header.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home_gb .home {
+    min-height: 70rem;
+    display: flex;
+    align-items: center;
+}
+
+.home_gb .home .content {
+    width: 50rem;
+    text-align: center;
+}
+
+.home_gb .home .content h3 {
+    font-size: 6rem;
+    color: var(--black);
+    font-family: 'Merienda one', cursive;
+}
+.home_gb .home .content p{
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    color: var(--black);
+    line-height: 2;
+}
+.about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+.about .image{
+    flex: 1 1 40rem;
+}
+.about .image img{
+    width: 100%;
+
+}
+.about .content{
+    flex: 1 1 40rem;
+}
+.about .content h3{
+    font-size: 4.5rem;
+    color: var(--black);
+    font-family: 'Merienda one', cursive;
+    padding-bottom: 1rem;
+}
+.about .content p{
+    padding: 1rem 0;
+    line-height: 2;
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+.facility .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+.facility .box-container .box{
+    text-align: center;
+}
+.facility .box-container .box i{
+    font-size: 50px;
+    height: 5rem;
+    margin-bottom: 1rem;
+    color: #be9c79;
+}
+.facility .box-container .box h3{
+    font-size: 2rem;
+    color: var(--black);
+    margin: 1rem 0;
+}
+.facility .box-container .box p{
+    line-height: 2;
+    font-size: 1.4rem;
+    color: var(--light-color);
+}
+.menu{
+    width: 100%;
+    padding: 70px 0;
+}
+.menu h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.menu h1 span{
+    color:var(--main-color);
+    margin-left: 15px;
+    font-family: mv boli;
+}
+.menu h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background:var(--main-color);
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+.menu .menu_box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+.menu .menu_box .menu_card{
+    width: 325px;
+    height: 480px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.menu .menu_box .menu_card .menu_image{
+    width: 300px;
+    height: 245px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.menu .menu_box .menu_card .menu_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+.menu .menu_box .menu_card .menu_image:hover img{
+    transform: scale(1.1);
+}
+.menu .menu_box .menu_card .small_card{
+    width: 45px;
+    height: 45px;
+    float: right;
+    position: relative;
+    top: -240px;
+    right: -8px;
+    opacity: 0;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+.menu .menu_box .menu_card:hover .small_card{
+    position: relative;
+    top: -240px;
+    right: 20px;
+    opacity: 1;
+}
+.menu .menu_box .menu_card .small_card i{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    color: var(--black);
+    cursor: pointer;
+    text-shadow: 0 0 6px #000;
+    transition: 0.2s;
+}
+.menu .menu_box .menu_card .small_card i:hover{
+    color:var(--main-color);
+}
+.menu .menu_box .menu_card .menu_info h2{
+    width: 60%;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    font-size: 25px;
+    color: var(--main-color);
+    font-family: 'Merienda one', cursive;
+}
+.menu .menu_box .menu_card .menu_info p{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 8px;
+    line-height: 21px;
+}
+.menu .menu_box .menu_card .menu_info h3{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.menu .menu_box .menu_card .menu_info .menu_icon{
+    color: var(--main-color);
+    text-align: center;
+    margin: 10px 0 10px 0;
+    font-size:20px;
+}
+.menu .menu_box .menu_card .menu_info .menu_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--white);
+    background:var(--black);
+    padding: 8px 10px;
+    margin: 0 80px;
+    transition: 0.3s;
+}
+.menu .menu_box .menu_card .menu_info .menu_btn:hover{
+    background-color: var(--main-color);
+}
+.gallary{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.gallary h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallary h1 span{
+    margin-left: 15px;
+    color: var(--main-color);
+    font-family: mv boli;
+}
+
+.gallary h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: var(--main-color);
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.gallary .gallary_image_box{
+    width: 95%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.gallary .gallary_image_box .gallary_image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--black);
+}
+
+.gallary .gallary_image_box .gallary_image img{
+    width: 100%;
+    transition: .3s;
+}
+
+.gallary .gallary_image_box .gallary_image:hover img{
+    opacity: 0.4;
+}
+
+.gallary .gallary_image_box .gallary_image h3{
+    position: absolute;
+    font-size: 35px;
+    margin-bottom: 130px;
+    color: var(--main-color);
+    font-family: polo;
+    z-index: 5;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.gallary .gallary_image_box .gallary_image:hover h3{
+    opacity: 1;
+}
+
+.gallary .gallary_image_box .gallary_image p{
+    position: absolute;
+    width: 400px;
+    margin-top: 30px;
+    text-align: center;
+    color: var(--white);
+    line-height: 22px;
+    opacity: 0;
+    z-index: 5;
+    transition: 0.3s;
+}
+
+.gallary .gallary_image_box .gallary_image:hover p{
+    opacity: 1;
+}
+
+.gallary .gallary_image_box .gallary_image .gallary_btn{
+    position: absolute;
+    margin-top: 180px;
+    color: var(--black);
+    background:var(--main-color);
+    padding: 7px 25px;
+    text-decoration: none;
+    opacity: 0;
+    transform: translateY(45px);
+    z-index: 5;
+    transition: 0.3s;
+}
+
+.gallary .gallary_image_box .gallary_image:hover .gallary_btn{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+footer{
+    width: 100%;
+    padding: 30px 0 0 20px;
+    background: whitesmoke;
+}
+
+footer .footer_main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+footer .footer_main .footer_tag{
+    text-align: center;
+}
+
+footer .footer_main .footer_tag h2{
+    color: var(--black);
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-family: 'Merienda one', cursive;
+}
+footer .footer_main .footer_tag h4{
+    color: var(--black);
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+footer .footer_main .footer_tag p{
+    margin: 10px 0;
+    font-size: 15px;
+    text-align: center;
+}
+
+footer .footer_main .footer_tag i{
+    margin: 0 5px;
+    cursor: pointer;
+    font-size:20px;
+}
+
+footer .footer_main .footer_tag i:hover{
+    color: var(--main-color);
+}
+
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+footer .end span{
+    color: var(--main-color);
+    margin-left: 10px;
+}
+@media (max_width:991px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max_width:768px) {
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .flex .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background-color: var(--white);
+        border-top: var(--border);
+        border-bottom: var(--border);
+    }
+}
+
+@media (max_width:450px) {
+    html {
+        font-size: 50%;
+    }
+}
+
